@@ -4,7 +4,8 @@
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
@@ -14,23 +15,27 @@ MonoBehaviour:
   components:
   - {fileID: 114527594671542966}
   - {fileID: 114339849572665496}
-  - {fileID: 114914201461855468}
   - {fileID: 114698408567805600}
 --- !u!114 &114339849572665496
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 0d7593b3a9277ac4696b20006c21dde2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  active: 1
+  active: 0
+  m_AdvancedMode: 0
   skyType:
     m_OverrideState: 1
-    m_Value: 2
+    m_Value: 0
+  skyAmbientMode:
+    m_OverrideState: 0
+    m_Value: 0
   fogType:
     m_OverrideState: 1
     m_Value: 2
@@ -38,7 +43,8 @@ MonoBehaviour:
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
@@ -46,10 +52,16 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   active: 1
+  m_AdvancedMode: 0
   maxShadowDistance:
     m_OverrideState: 1
     m_Value: 700
     min: 0
+  directionalTransmissionMultiplier:
+    m_OverrideState: 0
+    m_Value: 1
+    min: 0
+    max: 1
   cascadeShadowSplitCount:
     m_OverrideState: 1
     m_Value: 4
@@ -58,39 +70,30 @@ MonoBehaviour:
   cascadeShadowSplit0:
     m_OverrideState: 1
     m_Value: 0.005
-    min: 0
-    max: 1
   cascadeShadowSplit1:
     m_OverrideState: 1
     m_Value: 0.015
-    min: 0
-    max: 1
   cascadeShadowSplit2:
     m_OverrideState: 1
     m_Value: 0.3
-    min: 0
-    max: 1
   cascadeShadowBorder0:
     m_OverrideState: 1
     m_Value: 0
-    min: 0
   cascadeShadowBorder1:
     m_OverrideState: 1
     m_Value: 0
-    min: 0
   cascadeShadowBorder2:
     m_OverrideState: 1
     m_Value: 0
-    min: 0
   cascadeShadowBorder3:
     m_OverrideState: 1
     m_Value: 0
-    min: 0
 --- !u!114 &114698408567805600
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
@@ -98,6 +101,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   active: 1
+  m_AdvancedMode: 0
   colorMode:
     m_OverrideState: 1
     m_Value: 1
@@ -112,6 +116,10 @@ MonoBehaviour:
     m_Value: 1
     min: 0
     max: 1
+  maxFogDistance:
+    m_OverrideState: 0
+    m_Value: 5000
+    min: 0
   mipFogMaxMip:
     m_OverrideState: 1
     m_Value: 0.5
@@ -141,7 +149,8 @@ MonoBehaviour:
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
